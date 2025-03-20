@@ -35,18 +35,32 @@ console.log("teachers:" , teachers);
 //nathan è stato rimosso
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
-teachers.push('Vanessa');
+teachers.push('Vanessa'); //aggiunge vanessa alla fine
 console.log("teachers:" , teachers);
 // stampo per vedere se è cambiato
 //vanessa è stato aggiunto alla fine
 
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+teachers.unshift('Sarah'); //aggiunge sarah all'inizio
+console.log("teachers:" , teachers);
+// stampo per vedere se è cambiato
+//sarah è stato aggiunto all'inizio
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
+
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+let lewisIndex = null;
+for (let i = 0; i < teachers.length; i++) {  // Cicla su tutti gli elementi dell'array
+  if (teachers[i] === 'Lewis') {  // Se l'elemento corrente è 'Lewis'
+    lewisIndex = i; // Salva l'indice dell'elemento
+    break; // Interrompe il ciclo una volta trovato l'elemento
+  }
+}
+console.log("lewisIndex:", lewisIndex); // stampo per vedere l'indice di lewis
+
+
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+const isTeachersEmpty = teachers.length === 0; // controlla se la lunghezza dell'array è 0
