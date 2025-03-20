@@ -35,6 +35,11 @@ console.log("teachers:" , teachers);
 //nathan è stato rimosso
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
+teachers.push('Vanessa');
+console.log("teachers:" , teachers);
+// stampo per vedere se è cambiato
+//vanessa è stato aggiunto alla fine
+
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
